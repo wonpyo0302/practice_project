@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: practice_project
+  profiles:
+    active: local
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wplee
+    password: test1234
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 3
+      connection-timeout: 30000
+      validation-timeout: 5000
+      max-lifetime: 1800000
+      idle-timeout: 300000
+
+server:
+  port: 8080
